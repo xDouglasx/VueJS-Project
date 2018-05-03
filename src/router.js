@@ -4,12 +4,14 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 // ===================== Pages Components ======================
-import Hello from './components/Hello'
-
+import Navbar from './components/navbar'
+import MainPanel from './components/Main-panel'
+import Signup from './components/Signup'
 // ==================== Router registration ====================
 export default new Router({
   mode: 'hash',
   routes: [
-    { path: '/', component: Hello },
+    { path: '/', component: MainPanel },
+    { path: '/signup', component: Signup}
   ]
 })

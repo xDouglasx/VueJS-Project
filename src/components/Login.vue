@@ -22,17 +22,17 @@
       <a class="btn btn-warning" @click="logout">Logout</a>
       <br><br>
       <div>
-        
+        <post-message></post-message>
       </div>
     </div>
   </div>
 </template>
 
 <script type="text/javascript">
- 
+ import PostMessage from './PostMessage'
 
   export default {
-    components: {},
+    components: { PostMessage },
     name: 'login',
     data() {
       return {
@@ -89,7 +89,7 @@
         },
 
         googleUrl () {
-          let url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=email&response_type=token&client_id=705445061234-hg27gdnem5jnfqlob55a0eb3as885lfh.apps.googleusercontent.com&redirect_uri=http://localhost:8080/token';
+          let url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=email&response_type=token&client_id=540155853676-60g5nt0q6cq7tmpqiq3g76ojfvda1qoj.apps.googleusercontent.com&redirect_uri=http://localhost:8080/token';
 
           location.assign(url);
 

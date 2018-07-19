@@ -10,7 +10,7 @@ import Signup from './components/Signup'
 import GoogleSso from './components/Google-sso'
 // ==================== Router registration ====================
 export default new Router({
-  mode: 'hash',
+  mode: 'history',
   routes: [
     { path: '/', component: MainPanel },
     { path: '/signup', component: Signup},
